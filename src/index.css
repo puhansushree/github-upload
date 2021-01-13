@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+}
+
+.App-header_hashcode {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  height: 140px;
+}
+
+.image_hashcode_logo {
+  width: 40%;
+}
+
+.btn_hashcode {
+  margin-top: 10%;
+  background: #ff854d;
+  color: white;
+  font-size: 20px;
+  /* width: 300px;*/
+  height: 40%;
+  width: 85%;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  position:relative;
+  overflow:hidden;
+}
+
+.btn_hashcode:hover
+{
+   color:white;
+}
+
+/*added for shiny effect on button*/
+.btn_hashcode::before
+{
+   content:"";
+   height:110%;
+   width:30px;
+   background:rgba(255,255,255,.1);
+   position:absolute;
+   top:-3px;
+   transform:translateX(-70px) rotate(17deg);
+   animation: mymovehashcode 1s infinite;
+   animation-timing-function: linear;
+}
+
+@keyframes mymovehashcode {
+  from {left: 0px;}
+  to {left: 450px;}
+}
+
+.fa-icon {
+  color: orange;
+}
+
+.text_top_heading_hcj {
+  color: black;
+  font-size: 3vw;
+}
+
+.text-background {
+  background: #FDFDFD;
+}
+
+.text_heading {
+  font-family: FuturaPTBold;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: justify;
+  color: #373737
+}
+
+.p1 {
+  font-style: normal;
+  font-size: 17px;
+  text-align: justify;
+  color: #575757;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  padding: 80px;
+}
+
+.hashcode_icon {
+  font-size: 4em;
+}
+
+
+.text_icon {
+  text-align: left;
+  font-size: large;
+}
+
+.card_header_hcj {
+  background: #ff854d;
+}
+
+.card_body_hcj {
+  height: 180px;
+  width: 100%;
+  content:justify;
+}
+
+.card_footer_hcj {
+  background: #FFD2BD;
+  color: black;
+  font-weight: bold;
+  height: 220px;
+  width: 100%;
+  justify-content: left;
+}
+
+.footer-color {
+  background: #FCFCFC;
+
+}
+
+.p-pricing-color
+{
+  color: #575757;
+}
+
+.btn_teacher {
+  background: #ff854d;
+  color: white;
+  font-size: 20px;
+  /* width: 300px;*/
+  height: 90%;
+  width: 45%;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register_color
+{
+  color:navy;
+}
+
+@media screen and (max-width:768px) {
+  body {
+    background: white;
+  }
+
+  .App-header_hashcode {
+    height: 185px;
+  }
+
+  .image_hashcode_logo {
+    width:35%;
+  }
+
+  .btn_hashcode {
+    font-size: auto;
+    width:80%;
+  }
+
+  .text_top_heading_hcj {
+    font-size:0.8rem;
+  }
+
+  .image_hashcode_one {
+    width: 90%;
+  }
+
+  .flex-item {
+    padding: 10px;
+  }
+
+  .hashcode_icon {
+    font-size:1.8em;
+  }
+
+  .text_icon {
+    text-align: left;
+    font-size:x-small;
+  }
+  .btn_teacher {
+    font-size: 15px;
+    /* width: 300px;*/
+    height: 90%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1080px) {
+  body {
+    background: white;
+  }
+
+  .App-header_hashcode {
+    height: 140px;
+  }
+
+  .image_hashcode_logo {
+    width: 45%;
+  }
+
+  .btn_hashcode {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .text_top_heading_hcj {
+    font-size: 1.5rem;
+  }
+
+  .image_hashcode_one {
+    width: 100%;
+  }
+
+  .hashcode_icon {
+    font-size: 2em;
+  }
+
+  .flex-item {
+    padding: 50px;
+  }
+
+  .hashcode_icon {
+    font-size: 3em;
+  }
+
+  .text_icon {
+    text-align: left;
+    font-size: medium;
+  }
+
+  .card_body_hcj {
+    height: 290px;
+  }
+
+  .card_footer_hcj {
+    height: 310px;
+  }
+}

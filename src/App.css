@@ -1,0 +1,216 @@
+
+.App-header_lejhro {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  height: 140px;
+}
+
+.image_lejhro_logo 
+{
+  width: 30%;
+}
+
+.btn_lejhro {
+  margin-top: 10%;
+  background: lightseagreen;
+  color: white;
+  width: 60%;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  position:relative;
+  overflow:hidden;
+}
+
+.btn_lejhro:hover
+{
+  color:white;
+}
+
+/*added for shiny effect on button*/
+.btn_lejhro::before
+{
+   content:"";
+   height:160%;
+   width:30px;
+   background:rgba(255,255,255,.1);
+   position:absolute;
+   top:-15px;
+   transform:translateX(-70px) rotate(20deg);
+   animation: mymove 1s infinite;
+   animation-timing-function: linear;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 250px;}
+}
+
+.image_lejhro_one 
+{
+  width: 100%;
+}
+
+.text_on_image
+{
+  position: absolute;
+  top: 40%;
+  left: 25px;
+  color:white;
+  font-style: italic;
+  font-size:20px;
+}
+
+.text_on_image1
+{
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  color:white;
+  font-style: italic;
+  font-size:20px;
+}
+
+.btn_on_image
+{
+  position:absolute;
+  top: 80%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:transparent;
+  color: white;
+  font-size: 16px;
+  padding: 6px 12px;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.btn_on_image:hover
+{
+  color:white;
+}
+
+@keyframes animateimage
+{
+	20%
+	{
+		border-radius:50%;
+  }
+  40%
+	{
+		transition: height 5s, width 5s, border-radius 5s;
+  }
+  60%
+	{
+		transition: height 4s, width 4s, border-radius 4s;
+	}
+	80%
+	{
+		transition: height 3s, width 3s, border-radius 3s;
+	}
+	100%
+	{
+		transition: height 2s, width 2s, border-radius 2s;
+	}
+	
+}
+
+.image_lejhro_two_dynamic
+{
+	width:80%;
+	height:250px;
+	margin:1%;
+	animation:animateimage;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+}
+
+@media screen and (max-width:768px) {
+  body {
+    background: white;
+  }
+
+  .App-header_lejhro {
+    height: 170px;
+  }
+
+  .image_lejhro_logo {
+    width: 30%;
+  }
+
+  .btn_lejhro {
+    font-size: auto;
+    width: 50%;
+  }
+  
+  .text_on_image
+  {
+    font-size:12px;
+  }
+
+  .text_on_image1
+{ 
+  font-size:12px;
+}
+
+  .text-style {
+    font-size: 1.3rem;
+  }
+
+  .image_lejhro_one {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  body {
+    background: white;
+  }
+
+  .btn_lejhro {
+    font-size: auto;
+    width: 70%;
+  }
+
+  .text-style {
+    font-size: 1.2rem;
+  }
+
+  .image_lejhro_two_dynamic {
+    width: 100%;
+  }
+
+  .image_lejhro_two_dynamic {
+    height: 150px;
+    width: 150px;
+    transition: height 3s, width 5s, border-radius 5s;
+  }
+
+  .image_lejhro_two_dynamic:hover {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+}
+
+
+
+
+/*.image_lejhro_two_dynamic {
+  width: 100%;
+}
+
+.image_lejhro_two_dynamic {
+  height: 200px;
+  width: 200px;
+  transition: height 3s, width 5s, border-radius 5s;
+}
+
+.image_lejhro_two_dynamic:hover {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}*/
